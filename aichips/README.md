@@ -131,15 +131,15 @@ quadrantChart
     quadrant-2 高性能待生态
     quadrant-3 待发展
     quadrant-4 生态强性能待提升
-    Huawei 910C: [0.75, 0.85]
-    Huawei 910B: [0.70, 0.35]
-    Cambricon MLU590: [0.55, 0.28]
-    MetaX C500: [0.50, 0.28]
-    Biren BR100: [0.30, 0.28]
-    Enflame T30: [0.45, 0.28]
-    Iluvatar BI-V150: [0.52, 0.28]
-    Hygon DCU K100: [0.60, 0.22]
-    Moore Threads S4000: [0.48, 0.22]
+    "Huawei 910C": [0.75, 0.85]
+    "Huawei 910B": [0.70, 0.35]
+    "Cambricon MLU590": [0.55, 0.28]
+    "MetaX C500": [0.50, 0.28]
+    "Biren BR100": [0.30, 0.28]
+    "Enflame T30": [0.45, 0.28]
+    "Iluvatar BI-V150": [0.52, 0.28]
+    "Hygon DCU K100": [0.60, 0.22]
+    "Moore Threads S4000": [0.48, 0.22]
 ```
 
 ### 边缘/车载 AI 芯片 Edge & Automotive AI Chips
