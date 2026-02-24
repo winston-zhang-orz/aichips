@@ -1,0 +1,405 @@
+{
+  "companies": [
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "country": "USA",
+      "founded": 1993,
+      "headquarters": "Santa Clara, CA, USA",
+      "listed": "NASDAQ: NVDA",
+      "market_cap_usd_b": 2200,
+      "revenue_ai_usd_b": 47.5,
+      "fiscal_year": "FY2024",
+      "employees_approx": 29600,
+      "focus": ["Data Center AI", "Gaming GPU", "Automotive AI", "Robotics"],
+      "key_products": ["H100", "H200", "B200", "A100", "L40S", "DRIVE Thor"],
+      "software_stack": "CUDA / cuDNN / TensorRT / NeMo",
+      "key_customers": ["Microsoft", "Google", "Amazon", "Meta", "Oracle"],
+      "competitive_advantages": [
+        "CUDA ecosystem (15+ years developer lock-in)",
+        "NVLink high-speed interconnect",
+        "Full-stack AI platform (hardware + software + services)",
+        "Dominant market share (80%+ data center GPU market)"
+      ],
+      "challenges": ["US export controls limit China sales", "High GPU prices", "Supply constraints"],
+      "stock_performance_2023": "+239%",
+      "notes": "Dominant AI chip supplier globally; CUDA ecosystem is the primary moat"
+    },
+    {
+      "id": "amd",
+      "name": "AMD",
+      "country": "USA",
+      "founded": 1969,
+      "headquarters": "Santa Clara, CA, USA",
+      "listed": "NASDAQ: AMD",
+      "market_cap_usd_b": 230,
+      "revenue_ai_usd_b": 3.5,
+      "fiscal_year": "FY2024",
+      "employees_approx": 26000,
+      "focus": ["Data Center GPU", "CPU", "Edge AI"],
+      "key_products": ["MI300X", "MI300A", "MI250X"],
+      "software_stack": "ROCm / HIP",
+      "key_customers": ["Microsoft Azure", "Meta", "Oracle", "Dell"],
+      "competitive_advantages": [
+        "MI300X has largest HBM memory (192GB)",
+        "Strong CPU+GPU combined chip (MI300A APU)",
+        "More competitive pricing vs NVIDIA"
+      ],
+      "challenges": ["ROCm software maturity vs CUDA", "Catching up in market share"],
+      "notes": "Second largest data center GPU vendor; gaining AI traction in 2024"
+    },
+    {
+      "id": "google",
+      "name": "Google (Alphabet)",
+      "country": "USA",
+      "founded": 1998,
+      "headquarters": "Mountain View, CA, USA",
+      "listed": "NASDAQ: GOOGL",
+      "market_cap_usd_b": 1800,
+      "revenue_ai_usd_b": null,
+      "fiscal_year": "FY2024",
+      "employees_approx": 182000,
+      "focus": ["Cloud AI Infrastructure", "Internal AI Acceleration"],
+      "key_products": ["TPU v5e", "TPU v5p", "Axion (ARM CPU)"],
+      "software_stack": "JAX / XLA / TensorFlow",
+      "key_customers": ["Internal (Google Search, Gemini)", "GCP customers"],
+      "competitive_advantages": [
+        "Proprietary TPU architecture tuned for TensorFlow/JAX",
+        "Massive internal scale",
+        "ICI interconnect for pod-level scaling"
+      ],
+      "challenges": ["Limited commercial availability", "Software portability"],
+      "notes": "TPUs primarily used internally and via GCP; custom architecture optimized for Google workloads"
+    },
+    {
+      "id": "aws",
+      "name": "Amazon Web Services (AWS)",
+      "country": "USA",
+      "founded": 2006,
+      "headquarters": "Seattle, WA, USA",
+      "listed": "NASDAQ: AMZN",
+      "market_cap_usd_b": 1800,
+      "revenue_ai_usd_b": null,
+      "fiscal_year": "FY2024",
+      "employees_approx": 1500000,
+      "focus": ["Cloud AI Inference & Training", "Internal AI Acceleration"],
+      "key_products": ["Trainium2", "Inferentia2", "Graviton4"],
+      "software_stack": "AWS Neuron SDK / PyTorch / TensorFlow",
+      "key_customers": ["Internal", "AWS cloud customers"],
+      "competitive_advantages": [
+        "Cost optimization for AWS customers",
+        "Tightly integrated with AWS services",
+        "Inferentia2 best cost-per-inference"
+      ],
+      "challenges": ["Limited to AWS cloud", "Less flexible than NVIDIA GPUs"],
+      "notes": "AWS custom silicon strategy to reduce NVIDIA dependence and offer cost-efficient AI compute"
+    },
+    {
+      "id": "intel",
+      "name": "Intel",
+      "country": "USA",
+      "founded": 1968,
+      "headquarters": "Santa Clara, CA, USA",
+      "listed": "NASDAQ: INTC",
+      "market_cap_usd_b": 90,
+      "revenue_ai_usd_b": 1.5,
+      "fiscal_year": "FY2024",
+      "employees_approx": 110000,
+      "focus": ["Data Center AI", "Edge AI", "Automotive"],
+      "key_products": ["Gaudi 3", "Gaudi 2", "Core Ultra (NPU)", "Lunar Lake"],
+      "software_stack": "OpenVINO / oneAPI / PyTorch",
+      "key_customers": ["Dell", "Supermicro", "Various cloud providers"],
+      "competitive_advantages": [
+        "Open software stack (no CUDA lock-in)",
+        "Strong enterprise relationships",
+        "Gaudi 3 competitive pricing"
+      ],
+      "challenges": [
+        "Much smaller AI market share vs NVIDIA",
+        "Foundry delays",
+        "Software ecosystem maturity"
+      ],
+      "notes": "Acquired Habana Labs (Gaudi) in 2019; repositioning as CUDA-free AI alternative"
+    },
+    {
+      "id": "huawei",
+      "name": "华为 (Huawei)",
+      "country": "China",
+      "founded": 1987,
+      "headquarters": "Shenzhen, China",
+      "listed": "Private",
+      "market_cap_usd_b": null,
+      "revenue_ai_usd_b": 5.0,
+      "fiscal_year": "FY2023",
+      "employees_approx": 207000,
+      "focus": ["AI Training", "Cloud AI", "Telecom AI", "Edge AI"],
+      "key_products": ["Ascend 910B", "Ascend 910C", "Ascend 310", "Kunpeng CPU"],
+      "software_stack": "CANN / MindSpore",
+      "key_customers": ["Baidu", "ByteDance", "Alibaba", "Government customers"],
+      "competitive_advantages": [
+        "Domestic production on SMIC 7nm (reduced US risk)",
+        "Integrated cloud + chip + software stack (Ascend cloud)",
+        "Government backing and preferential procurement"
+      ],
+      "challenges": [
+        "US export controls and entity list restrictions",
+        "SMIC yield and capacity constraints",
+        "Software ecosystem less mature than CUDA"
+      ],
+      "notes": "China's most advanced AI chip company; Ascend 910B widely deployed in Chinese LLM training"
+    },
+    {
+      "id": "cambricon",
+      "name": "寒武纪 (Cambricon Technologies)",
+      "country": "China",
+      "founded": 2016,
+      "headquarters": "Beijing, China",
+      "listed": "SSE: 688256",
+      "market_cap_usd_b": 4.5,
+      "revenue_ai_usd_b": 0.07,
+      "fiscal_year": "FY2023",
+      "employees_approx": 2000,
+      "focus": ["Cloud AI Training & Inference", "Edge AI"],
+      "key_products": ["MLU590", "MLU370", "MLU290", "1H16 (edge)"],
+      "software_stack": "BANG C / Neuware / PyTorch Plugin",
+      "key_customers": ["Alibaba Cloud", "Baidu Cloud", "China Telecom"],
+      "competitive_advantages": [
+        "First publicly-listed Chinese AI chip company",
+        "Academic lineage (Chinese Academy of Sciences)",
+        "Native Chinese software stack"
+      ],
+      "challenges": [
+        "Losing ground to Huawei Ascend in training",
+        "Profitability challenges",
+        "Limited to TSMC before US restrictions"
+      ],
+      "notes": "Pioneer of Chinese AI chip industry; faces intense domestic competition"
+    },
+    {
+      "id": "biren",
+      "name": "壁仞科技 (Biren Technology)",
+      "country": "China",
+      "founded": 2019,
+      "headquarters": "Shanghai, China",
+      "listed": "Private (Series D+)",
+      "market_cap_usd_b": 3.0,
+      "revenue_ai_usd_b": 0.05,
+      "fiscal_year": "FY2023",
+      "employees_approx": 1000,
+      "focus": ["Cloud AI Training & Inference", "HPC"],
+      "key_products": ["BR100", "BR104"],
+      "software_stack": "BIRENSAIL / BIREN SDK",
+      "key_customers": ["Select Chinese cloud providers"],
+      "competitive_advantages": [
+        "Aggressive performance specs at launch",
+        "Strong founding team (ex-AMD, NVIDIA engineers)"
+      ],
+      "challenges": [
+        "US entity list / TSMC access restrictions (October 2022)",
+        "Revenue scale limited",
+        "Pivoting to SMIC manufacturing"
+      ],
+      "notes": "Ambitious startup severely impacted by US export controls; pivoting strategy"
+    },
+    {
+      "id": "enflame",
+      "name": "燧原科技 (Enflame Technology)",
+      "country": "China",
+      "founded": 2019,
+      "headquarters": "Shanghai, China",
+      "listed": "Private (Series C)",
+      "market_cap_usd_b": 1.5,
+      "revenue_ai_usd_b": 0.03,
+      "fiscal_year": "FY2023",
+      "employees_approx": 800,
+      "focus": ["Cloud AI Training"],
+      "key_products": ["T30", "T20", "T10"],
+      "software_stack": "TopsRider / TopsML",
+      "key_customers": ["Tencent", "China Mobile Cloud"],
+      "competitive_advantages": [
+        "GRS rack-scale interconnect for multi-chip scaling",
+        "Strong Tencent backing (strategic investor)"
+      ],
+      "challenges": [
+        "Revenue scale limited",
+        "TSMC access restrictions post-2022",
+        "Narrow customer base"
+      ],
+      "notes": "Backed by Tencent; focuses on training at scale with proprietary interconnect"
+    },
+    {
+      "id": "iluvatar",
+      "name": "天数智芯 (Iluvatar CoreX)",
+      "country": "China",
+      "founded": 2019,
+      "headquarters": "Shanghai, China",
+      "listed": "Private (Series B+)",
+      "market_cap_usd_b": 1.0,
+      "revenue_ai_usd_b": 0.02,
+      "fiscal_year": "FY2023",
+      "employees_approx": 600,
+      "focus": ["Cloud AI Training & Inference", "GPGPU"],
+      "key_products": ["BI-V150", "BI-V100"],
+      "software_stack": "TXGPU / CUDA-compatible tools",
+      "key_customers": ["Baidu", "Various Chinese state-owned enterprises"],
+      "competitive_advantages": [
+        "GPU architecture with CUDA migration tooling",
+        "Standard PCIe form factor (easy deployment)"
+      ],
+      "challenges": ["TSMC access restrictions", "Software maturity"],
+      "notes": "GPU-architecture approach with CUDA compatibility to ease developer migration"
+    },
+    {
+      "id": "moorethreads",
+      "name": "摩尔线程 (Moore Threads)",
+      "country": "China",
+      "founded": 2020,
+      "headquarters": "Beijing, China",
+      "listed": "Private (Series B+)",
+      "market_cap_usd_b": 2.0,
+      "revenue_ai_usd_b": 0.05,
+      "fiscal_year": "FY2023",
+      "employees_approx": 1200,
+      "focus": ["Cloud AI", "Desktop GPU", "Graphics"],
+      "key_products": ["MTT S4000", "MTT S80", "MTT G100 (gaming)"],
+      "software_stack": "MUSA (MooreThreads Unified System Architecture)",
+      "key_customers": ["Alibaba Cloud", "Various Chinese cloud providers"],
+      "competitive_advantages": [
+        "Full GPU for graphics + AI dual use",
+        "MUSA: CUDA-compatible programming model",
+        "Video codec + AI fusion chip design"
+      ],
+      "challenges": ["Added to US entity list (2023)", "Manufacturing constraints"],
+      "notes": "Founded by ex-NVIDIA China head; pursuing full GPU ecosystem (games + AI)"
+    },
+    {
+      "id": "metax",
+      "name": "沐曦 (MetaX Integrated Circuits)",
+      "country": "China",
+      "founded": 2020,
+      "headquarters": "Shanghai / Chengdu, China",
+      "listed": "Private (Series B)",
+      "market_cap_usd_b": 1.5,
+      "revenue_ai_usd_b": 0.03,
+      "fiscal_year": "FY2023",
+      "employees_approx": 700,
+      "focus": ["Cloud AI Training & Inference", "GPGPU"],
+      "key_products": ["C500", "C100"],
+      "software_stack": "MXMACA (CUDA-compatible) / MxSPARK",
+      "key_customers": ["Alibaba Cloud", "Baidu Cloud"],
+      "competitive_advantages": [
+        "Strong CUDA compatibility via MXMACA",
+        "C500: competitive specs with HBM2e",
+        "Chengdu government support"
+      ],
+      "challenges": ["TSMC access restrictions", "Revenue scale"],
+      "notes": "Strong CUDA compatibility focus; benefiting from Chengdu government industrial policy"
+    },
+    {
+      "id": "horizon",
+      "name": "地平线 (Horizon Robotics)",
+      "country": "China",
+      "founded": 2015,
+      "headquarters": "Beijing, China",
+      "listed": "HKEX: 9660 (IPO 2024)",
+      "market_cap_usd_b": 6.0,
+      "revenue_ai_usd_b": 0.25,
+      "fiscal_year": "FY2023",
+      "employees_approx": 4000,
+      "focus": ["Autonomous Driving", "ADAS", "Robotics Edge AI"],
+      "key_products": ["Journey 6", "Journey 5", "Journey 3"],
+      "software_stack": "TogetherOS / TogetherDrive / BPU SDK",
+      "key_customers": ["Li Auto", "BAIC", "SAIC", "Great Wall Motors", "Bosch"],
+      "competitive_advantages": [
+        "Mature BPU (Brain Processing Unit) architecture",
+        "Leading automotive software stack in China",
+        "Strong OEM relationships (30+ car brands)"
+      ],
+      "challenges": [
+        "Mobileye and NVIDIA Drive competition",
+        "Profitability path in automotive",
+        "Geopolitical risks in overseas expansion"
+      ],
+      "notes": "China's leading automotive AI chip company; IPO on HKEX in October 2024"
+    },
+    {
+      "id": "blacksesame",
+      "name": "黑芝麻智能 (Black Sesame Technologies)",
+      "country": "China",
+      "founded": 2016,
+      "headquarters": "Shenzhen, China",
+      "listed": "HKEX: 2533 (IPO 2024)",
+      "market_cap_usd_b": 1.5,
+      "revenue_ai_usd_b": 0.04,
+      "fiscal_year": "FY2023",
+      "employees_approx": 1500,
+      "focus": ["Autonomous Driving", "ADAS"],
+      "key_products": ["Huashan A1000 Pro", "Huashan A1000L", "Wudang C1200"],
+      "software_stack": "HolmesAD / NeuralStreamPro",
+      "key_customers": ["Geely", "Changan", "BOSCH", "Continental"],
+      "competitive_advantages": [
+        "High-performance camera perception pipeline",
+        "Competitive L3+ ADAS price-performance"
+      ],
+      "challenges": [
+        "Intense competition from Horizon Robotics, NVIDIA Drive",
+        "Revenue scale limited",
+        "Higher power than competitors"
+      ],
+      "notes": "Listed on HKEX in 2024; focused on perception-heavy automotive AI"
+    },
+    {
+      "id": "hygon",
+      "name": "海光信息 (Hygon Information Technology)",
+      "country": "China",
+      "founded": 2016,
+      "headquarters": "Chengdu, China",
+      "listed": "SSE: 688041",
+      "market_cap_usd_b": 10.0,
+      "revenue_ai_usd_b": 0.5,
+      "fiscal_year": "FY2023",
+      "employees_approx": 2000,
+      "focus": ["Server CPU", "Data Center GPU (DCU)", "HPC"],
+      "key_products": ["Deep Computing Unit (DCU) K100", "Hygon C86 CPU"],
+      "software_stack": "DTK (DCU ToolKit / ROCm-based)",
+      "key_customers": ["China National Supercomputing Centers", "State-owned banks", "Telecom"],
+      "competitive_advantages": [
+        "AMD x86 CPU IP license (pre-entity list)",
+        "ROCm-based DTK: familiar developer experience",
+        "Strong government procurement backing"
+      ],
+      "challenges": [
+        "US entity list (2019): no further AMD IP updates",
+        "Dependent on previous-generation AMD architecture",
+        "Limited innovation roadmap"
+      ],
+      "notes": "Originally formed from AMD-Tianjin Haiguang JV; unique x86+DCU combo in China"
+    },
+    {
+      "id": "rockchip",
+      "name": "瑞芯微 (Rockchip Electronics)",
+      "country": "China",
+      "founded": 2001,
+      "headquarters": "Fuzhou, China",
+      "listed": "Private",
+      "market_cap_usd_b": 2.0,
+      "revenue_ai_usd_b": 0.3,
+      "fiscal_year": "FY2023",
+      "employees_approx": 3000,
+      "focus": ["Edge AI", "IoT", "Embedded AI", "Consumer Electronics"],
+      "key_products": ["RK3588", "RK3576", "RK3566"],
+      "software_stack": "RKNN (Rockchip Neural Network SDK)",
+      "key_customers": ["Various tablet/TV box ODMs", "Industrial IoT OEMs"],
+      "competitive_advantages": [
+        "Cost-effective edge AI chip at <$30",
+        "Strong ecosystem (RKNN SDK, extensive documentation)",
+        "High volume production experience"
+      ],
+      "challenges": [
+        "Low margin business",
+        "Not competitive in data center AI"
+      ],
+      "notes": "Dominant in edge AI SoCs for embedded and IoT applications at low cost"
+    }
+  ]
+}
