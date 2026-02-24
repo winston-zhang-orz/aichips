@@ -125,8 +125,8 @@ timeline
 ```mermaid
 quadrantChart
     title 国产AI芯片竞争力分析 (性能 vs 生态成熟度)
-    x-axis 软件生态成熟度 (低→高)
-    y-axis BF16算力TFLOPS (低→高)
+    x-axis 软件生态成熟度低 --> 软件生态成熟度高
+    y-axis BF16算力TFLOPS低 --> BF16算力TFLOPS高
     quadrant-1 领先区
     quadrant-2 高性能待生态
     quadrant-3 待发展
