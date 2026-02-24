@@ -1,0 +1,77 @@
+{
+  "market_overview": {
+    "global_ai_chip_market_size_2023_usd_b": 68,
+    "global_ai_chip_market_size_2028_forecast_usd_b": 311,
+    "cagr_2023_2028_percent": 35,
+    "data_center_gpu_market_share": {
+      "NVIDIA": "80-85%",
+      "AMD": "8-10%",
+      "Others (Google TPU, AWS Trainium, Intel Gaudi)": "5-10%"
+    },
+    "china_ai_chip_market_size_2023_usd_b": 12,
+    "china_ai_chip_market_size_2028_forecast_usd_b": 55,
+    "china_cagr_2023_2028_percent": 35
+  },
+  "segments": [
+    {
+      "segment": "Data Center Training",
+      "description": "Large-scale AI model training (LLM, multimodal)",
+      "key_players": ["NVIDIA", "AMD", "Google", "Huawei", "Cambricon"],
+      "market_size_2023_usd_b": 35,
+      "growth_driver": "LLM race: GPT-4, Gemini, Llama, Qwen, etc.",
+      "avg_chip_price_range_usd": "6000-40000"
+    },
+    {
+      "segment": "Data Center Inference",
+      "description": "Serving AI models at scale (chatbots, recommendation, search)",
+      "key_players": ["NVIDIA", "AMD", "AWS Inferentia", "Intel Gaudi", "Huawei"],
+      "market_size_2023_usd_b": 20,
+      "growth_driver": "ChatGPT-like service deployment, AI copilots",
+      "avg_chip_price_range_usd": "3000-15000"
+    },
+    {
+      "segment": "Automotive / Autonomous Driving",
+      "description": "On-vehicle AI chips for ADAS and full self-driving",
+      "key_players": ["NVIDIA Drive", "Horizon Robotics", "Black Sesame", "Mobileye"],
+      "market_size_2023_usd_b": 5,
+      "growth_driver": "NEV (New Energy Vehicle) boom in China; L2+ mandates",
+      "avg_chip_price_range_usd": "50-500"
+    },
+    {
+      "segment": "Edge AI / IoT",
+      "description": "AI inference at the edge: cameras, robots, industrial",
+      "key_players": ["Rockchip", "Allwinner", "NVIDIA Jetson", "NXP"],
+      "market_size_2023_usd_b": 8,
+      "growth_driver": "Smart factory, smart city, vision AI deployments",
+      "avg_chip_price_range_usd": "5-200"
+    }
+  ],
+  "china_market_dynamics": {
+    "key_drivers": [
+      "US export controls (Oct 2022, Oct 2023): ban on H100, A100, A800 export to China",
+      "Chinese LLM race: Baidu ERNIE, Alibaba Qwen, ByteDance Doubao, Zhipu GLM",
+      "Government-supported domestic chip procurement policies",
+      "Massive data center buildout by cloud giants: Alibaba, Tencent, ByteDance, Baidu"
+    ],
+    "us_export_controls_impact": {
+      "2022_oct": "A100, H100 banned from China; NVIDIA releases A800/H800 as workaround",
+      "2023_oct": "A800 and H800 also banned; Chinese firms pivot entirely to domestic chips",
+      "beneficiaries": ["Huawei Ascend 910B/910C", "Cambricon MLU590", "Enflame T30", "MetaX C500"]
+    },
+    "chinese_chip_gap_analysis": {
+      "training_performance_vs_h100_percent": "30-50% for best domestic options (Ascend 910B)",
+      "software_maturity_vs_cuda": "Significant gap; PyTorch support improving",
+      "manufacturing_constraint": "SMIC max 7nm (vs TSMC 4nm for H100); yield challenges"
+    }
+  },
+  "investment_landscape": {
+    "notable_rounds_2023_2024": [
+      {"company": "Biren Technology", "amount_usd_m": 200, "stage": "Series D", "year": 2023},
+      {"company": "Enflame Technology", "amount_usd_m": 150, "stage": "Series C", "year": 2023},
+      {"company": "MetaX", "amount_usd_m": 120, "stage": "Series B", "year": 2023},
+      {"company": "Moore Threads", "amount_usd_m": 300, "stage": "Series B+", "year": 2022},
+      {"company": "Black Sesame Technologies", "amount_usd_m": 100, "stage": "IPO", "year": 2024},
+      {"company": "Horizon Robotics", "amount_usd_m": 696, "stage": "IPO", "year": 2024}
+    ]
+  }
+}
