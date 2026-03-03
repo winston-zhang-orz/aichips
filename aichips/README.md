@@ -16,6 +16,7 @@
 - [公司分析 Company Profiles](#-公司分析-company-profiles)
   - [全球头部厂商 Global Leaders](#全球头部厂商-global-leaders)
   - [中国主要厂商 China Players](#中国主要厂商-china-players)
+  - [新兴挑战者 New Challengers](#新兴挑战者-new-challengers)
 - [中国市场分析 China Market Analysis](#-中国市场分析-china-market-analysis)
 - [数据文件 Data Files](#-数据文件-data-files)
 
@@ -40,10 +41,12 @@
 
 ```mermaid
 timeline
-    title AI 芯片产品上市时间路线图 (2019–2024)
+    title AI 芯片产品上市时间路线图 (2019–2025)
     section 2019
         Huawei Ascend 910 : 华为昇腾910
                           : 7nm, 256 TFLOPS
+        Alibaba Hanguang 800 : 阿里含光800
+                             : 12nm 推理芯片 78,563 TOPS
     section 2020
         NVIDIA A100 : 数据中心旗舰 80GB HBM2e
                     : 7nm TSMC, $10,000
@@ -53,6 +56,10 @@ timeline
         Cambricon MLU370 : 寒武纪 MLU370
                          : 7nm, 128 TFLOPS
         Moore Threads MTT S80 : 摩尔线程 S80
+        Baidu Kunlun 2 : 百度昆仑2
+                       : 7nm Samsung, 256 TFLOPS
+        Alibaba Yitian 710 : 阿里倚天710
+                           : 5nm ARM 服务器CPU
     section 2022
         NVIDIA A100 (H800/A800) : 出口管制前最后供货
         Biren BR100 : 壁仞科技 BR100
@@ -60,18 +67,25 @@ timeline
         Rockchip RK3588 : 瑞芯微 8nm 边缘AI SoC
         Black Sesame A1000 Pro : 黑芝麻华山A1000 Pro
                                : 16nm 自动驾驶芯片
+        NVIDIA Jetson AGX Orin : 275 TOPS 边缘AI
     section 2023
         NVIDIA H100 : 旗舰训练芯片
                     : 4nm, 989 TFLOPS BF16, $30,000
         NVIDIA H200 : 141GB HBM3e
                    : $35,000
+        NVIDIA L40S : Ada Lovelace 推理
+                   : 48GB GDDR6, $22,000
         AMD MI300X : 192GB HBM3
                   : 1307 TFLOPS, $15,000
         Google TPU v5e : 高效训练/推理
+        Google TPU v5p : 旗舰训练 459 TFLOPS
         AWS Trainium2 : 下一代云训练
+        AWS Inferentia2 : 低成本云推理
         Intel Gaudi 2 : 开放软件栈
+        Microsoft Maia 100 : Azure 专用 AI 芯片
+        Meta MTIA v1 : Meta 推荐系统推理
         Huawei Ascend 910B : 华为昇腾910B
-                           : SMIC 7nm, A100替代
+                            : SMIC 7nm, A100替代
         Cambricon MLU590 : 寒武纪 MLU590
                          : 256 TFLOPS, $6,000
         Enflame T30 : 燧原云燧T30
@@ -83,16 +97,31 @@ timeline
         Horizon Journey 6 : 地平线征程6
                           : 560 TOPS 自动驾驶
         Hygon DCU K100 : 海光 DCU K100
+        Groq LPU : GroqChip LPU
+                 : 最快LLM推理 500+ tokens/s
     section 2024
         NVIDIA B200 : Blackwell 架构
                    : 4500 TFLOPS BF16, $40,000
+        NVIDIA H20 : 中国专供版
+                  : 96GB HBM3, $15,000
+        AMD MI325X : 256GB HBM3E
+                  : 最大显存容量
         Intel Gaudi 3 : 5nm, 1835 TFLOPS
                       : 开源 CUDA 替代
+        Meta MTIA v2 : Meta 自研推理芯片
+                    : 5nm 185 TFLOPS
         Huawei Ascend 910C : 华为昇腾910C
                            : SMIC 6nm, H100替代
+        Cerebras CS-3 : WSE-3 晶圆级芯片
+                     : 125 PFLOPS BF16
         Horizon Robotics IPO : 地平线机器人 港股上市
         Black Sesame IPO : 黑芝麻智能 港股上市
+    section 2025
+        NVIDIA GB200 NVL72 : Blackwell Ultra
+                           : 9000 TFLOPS, 72 GPU rack
+        NVIDIA DRIVE Thor : 2000 TOPS 自动驾驶
 ```
+
 
 ---
 
@@ -102,16 +131,26 @@ timeline
 
 | 芯片 | 公司 | 上市时间 | 制程 | 显存 | BF16 TFLOPS | 价格 (USD) | 状态 |
 |------|------|----------|------|------|-------------|-----------|------|
+| **GB200 NVL72** | NVIDIA 🇺🇸 | 2025-Q1 | 4nm TSMC | 192GB HBM3e/GPU | 9,000 | 待定 | 发布中 |
 | **B200** | NVIDIA 🇺🇸 | 2024-03 | 4nm TSMC | 192GB HBM3e | 4,500 | ~$40,000 | 量产中 |
 | **H200** | NVIDIA 🇺🇸 | 2023-11 | 4nm TSMC | 141GB HBM3e | 989 | ~$35,000 | 量产 |
 | **H100** | NVIDIA 🇺🇸 | 2022-03 | 4nm TSMC | 80GB HBM3 | 989 | ~$30,000 | 量产 |
+| **L40S** | NVIDIA 🇺🇸 | 2023-08 | 4nm TSMC | 48GB GDDR6 | 362 | ~$22,000 | 量产 |
+| **H20** | NVIDIA 🇺🇸 | 2024-03 | 4nm TSMC | 96GB HBM3 | 296 | ~$15,000 | 量产 (中国专供) |
+| **MI325X** | AMD 🇺🇸 | 2024-Q4 | 5nm chiplet | 256GB HBM3E | 1,307 | ~$20,000 | 量产中 |
 | **MI300X** | AMD 🇺🇸 | 2023-12 | 5nm chiplet | 192GB HBM3 | 1,307 | ~$15,000 | 量产 |
 | **Gaudi 3** | Intel 🇺🇸 | 2024-04 | 5nm TSMC | 128GB HBM2e | 1,835 | ~$8,000 | 量产 |
+| **TPU v5p** | Google 🇺🇸 | 2023-12 | 专有 | 95GB HBM2e | 459 | 云端仅限 | GCP Only |
 | **TPU v5e** | Google 🇺🇸 | 2023-08 | 专有 | 16GB HBM | 393 | 云端仅限 | GCP Only |
 | **Trainium2** | AWS 🇺🇸 | 2023-11 | 专有 | 96GB HBM | 832 | 云端仅限 | AWS Only |
+| **Inferentia2** | AWS 🇺🇸 | 2023-03 | 专有 | 32GB HBM | 380 | 云端仅限 | AWS Only |
+| **Maia 100** | Microsoft 🇺🇸 | 2023-11 | 5nm TSMC | 64GB HBM2e | 未公开 | 云端仅限 | Azure Only |
+| **MTIA v2** | Meta 🇺🇸 | 2024-04 | 5nm TSMC | 32GB LPDDR5 | 185 | 内部使用 | 内部 |
+| **CS-3 (WSE-3)** | Cerebras 🇺🇸 | 2024-03 | 5nm TSMC | 44GB SRAM | 125,000 | 定制报价 | 量产 |
 | **Ascend 910C** | Huawei 🇨🇳 | 2024-Q2 | 6nm SMIC | 96GB HBM | 780 | ~$12,000 | 小批量 |
 | **Ascend 910B** | Huawei 🇨🇳 | 2023-08 | 7nm SMIC | 64GB HBM2 | 320 | ~$8,000 | 量产 |
 | **MLU590** | Cambricon 🇨🇳 | 2023-05 | 7nm TSMC | 64GB HBM2e | 256 | ~$6,000 | 量产 |
+| **Kunlun 2** | Baidu 🇨🇳 | 2021-08 | 7nm Samsung | 16GB HBM2 | 256 | ~$3,000 | 量产 |
 | **BR100** | Biren 🇨🇳 | 2022-08 | 7nm TSMC | 64GB HBM2e | 256 | ~$10,000 | 受限量产 |
 | **T30** | Enflame 🇨🇳 | 2023-03 | 7nm TSMC | 32GB HBM2e | 256 | ~$5,000 | 量产 |
 | **C500** | MetaX 🇨🇳 | 2023-09 | 7nm TSMC | 64GB HBM2e | 256 | ~$7,000 | 量产 |
@@ -140,16 +179,19 @@ quadrantChart
     "Iluvatar BI-V150": [0.52, 0.28]
     "Hygon DCU K100": [0.60, 0.22]
     "Moore Threads S4000": [0.48, 0.22]
+    "Baidu Kunlun 2": [0.58, 0.28]
 ```
+
 
 ### 边缘/车载 AI 芯片 Edge & Automotive AI Chips
 
 | 芯片 | 公司 | 上市时间 | 制程 | TOPS | 功耗 | 价格 | 应用场景 |
 |------|------|----------|------|------|------|------|---------|
+| **DRIVE Thor** | NVIDIA 🇺🇸 | 2025 | 4nm | 2,000 | 150W | ~$1,000 | L2+ 自动驾驶 / 智能座舱 |
 | **Journey 6** | Horizon 🇨🇳 | 2023-04 | 7nm | 560 | 70W | ~$200 | L2-L4 自动驾驶 |
+| **Jetson AGX Orin** | NVIDIA 🇺🇸 | 2022-04 | 8nm | 275 | 60W | ~$899 | 机器人 / 工业AI / 边缘AI |
 | **A1000 Pro** | Black Sesame 🇨🇳 | 2022-12 | 16nm | 196 | 36W | ~$100 | L3+ ADAS |
 | **RK3588** | Rockchip 🇨🇳 | 2022-02 | 8nm | 6 | 10W | ~$20 | 边缘AI / IoT |
-| **DRIVE Thor** | NVIDIA 🇺🇸 | 2025 (预) | 4nm | 2000 | 150W | ~$1,000 | L2+ 自动驾驶 |
 
 ---
 
@@ -177,6 +219,55 @@ quadrantChart
 | 核心竞争力 | MI300X 192GB HBM (最大显存)，性价比优势 |
 | 主要客户 | Microsoft Azure, Meta, Oracle |
 | 面临挑战 | ROCm 软件成熟度 vs CUDA |
+
+#### Intel 🇺🇸
+| 项目 | 详情 |
+|------|------|
+| 上市 | NASDAQ: INTC |
+| 市值 | ~$900 亿 (2024) |
+| AI 芯片营收 | ~$15 亿 (FY2024 预估) |
+| 旗舰产品 | Gaudi 3 (1,835 TFLOPS BF16) |
+| 核心竞争力 | 开放软件栈 (无 CUDA 锁定)，企业关系深厚，Gaudi 3 性价比 |
+| 主要客户 | Dell, Supermicro, 各云服务商 |
+| 面临挑战 | AI 市场份额远低于 NVIDIA，软件生态成熟度 |
+
+#### Microsoft 🇺🇸
+| 项目 | 详情 |
+|------|------|
+| 上市 | NASDAQ: MSFT |
+| 市值 | ~$3.1 万亿 (2024) |
+| 旗舰产品 | Maia 100 (Azure 专用 AI 芯片) |
+| 核心竞争力 | OpenAI 独家云合作伙伴，Maia 100 为 GPT 级工作负载量身定制 |
+| 主要客户 | OpenAI, 全球企业客户 |
+| 面临挑战 | 自研芯片起步晚 (vs Google TPU, AWS Trainium)，性能细节未公开 |
+
+#### Meta 🇺🇸
+| 项目 | 详情 |
+|------|------|
+| 上市 | NASDAQ: META |
+| 市值 | ~$1.3 万亿 (2024) |
+| 旗舰产品 | MTIA v2 (推理加速器) |
+| 核心竞争力 | 数十亿用户规模产生巨大推理需求，开源 Llama 模型带动生态 |
+| 主要客户 | 内部使用 (Facebook, Instagram, WhatsApp, Llama) |
+| 面临挑战 | MTIA 仅覆盖推理，训练仍依赖 NVIDIA H100/H200 |
+
+#### Groq 🇺🇸
+| 项目 | 详情 |
+|------|------|
+| 融资情况 | D 轮，估值约 $28 亿 (2024) |
+| 旗舰产品 | GroqChip LPU |
+| 核心竞争力 | LLM 推理速度全球最快 (LLaMA-70B 500+ tokens/s)，确定性执行，无 HBM 瓶颈 |
+| 主要客户 | GroqCloud API 用户，企业客户 |
+| 面临挑战 | 14nm 制程较老，SRAM 容量限制上下文窗口，营收规模 |
+
+#### Cerebras Systems 🇺🇸
+| 项目 | 详情 |
+|------|------|
+| 融资情况 | Pre-IPO，估值约 $40 亿 (2024) |
+| 旗舰产品 | CS-3 (WSE-3 晶圆级芯片) |
+| 核心竞争力 | 全球最大芯片 (整张 300mm 晶圆)，4 万亿晶体管，44GB 片上 SRAM，消除 HBM 带宽瓶颈 |
+| 主要客户 | G42 (阿布扎比)，政府实验室，科研机构 |
+| 面临挑战 | 系统成本极高 ($200 万+/台)，晶圆级制造良率挑战，IPO 计划延迟 |
 
 ---
 
@@ -273,6 +364,26 @@ quadrantChart
 | 主要客户 | 吉利、长安、博世、Continental |
 | 挑战 | 地平线与 NVIDIA 竞争激烈 |
 
+#### 百度 (Baidu) 🇨🇳
+| 项目 | 详情 |
+|------|------|
+| 上市 | NASDAQ: BIDU |
+| 市值 | ~$300 亿 (2024) |
+| 旗舰产品 | 昆仑2 (Kunlun 2) |
+| 核心优势 | 中国最早布局自研 AI 芯片的互联网公司之一，与 PaddlePaddle 深度整合 |
+| 主要客户 | 百度云，文心一言 (ERNIE Bot) |
+| 挑战 | 昆仑2 受限于三星 7nm (台积电受限后)，竞争对手华为昇腾强势 |
+
+#### 阿里巴巴 (Alibaba) 🇨🇳
+| 项目 | 详情 |
+|------|------|
+| 上市 | NYSE: BABA / 港交所: 9988 |
+| 市值 | ~$2,000 亿 (2024) |
+| 旗舰产品 | 含光800 (推理)，倚天710 (ARM CPU) |
+| 核心优势 | 含光800 推理性能领先，倚天710 降低阿里云算力成本，通义千问 (Qwen) LLM |
+| 主要客户 | 阿里云，淘宝/天猫内部 |
+| 挑战 | 自研芯片仅供内部使用，美国出口管制限制先进台积电节点获取 |
+
 ---
 
 ## 🇨🇳 中国市场分析 China Market Analysis
@@ -330,19 +441,23 @@ timeline
 
 ## 📈 关键洞察 Key Insights
 
-1. **NVIDIA 垄断** ：NVIDIA 以 CUDA 生态为核心护城河，占全球数据中心 GPU 市场 80-85%，短期内无法被撼动。
+1. **NVIDIA 垄断** ：NVIDIA 以 CUDA 生态为核心护城河，占全球数据中心 GPU 市场 80-85%，短期内无法被撼动。GB200 NVL72 将进一步拉大与竞争对手的性能差距。
 
-2. **中美芯片脱钩** ：2022-2023 年美国出口管制将中国市场与全球最先进 AI 芯片完全隔离，催生了以华为昇腾为代表的国产替代浪潮。
+2. **中美芯片脱钩** ：2022-2023 年美国出口管制将中国市场与全球最先进 AI 芯片完全隔离，催生了以华为昇腾为代表的国产替代浪潮。NVIDIA 专为中国合规设计的 H20 是为数不多的例外。
 
 3. **性能差距收窄** ：华为昇腾 910C 的 BF16 算力约为 NVIDIA H100 的 79%，但软件生态和互联带宽仍存在显著差距。
 
-4. **中国车载 AI 芯片领先** ：在边缘/车载 AI 领域，地平线征程6等中国芯片已达到国际竞争水平，并在国内市场占据主导。
+4. **科技巨头自研芯片** ：微软 (Maia 100)、Meta (MTIA v2)、百度 (昆仑2)、阿里巴巴 (含光800) 等互联网/云厂商纷纷推出自研芯片，以降低对 NVIDIA 的依赖并优化特定工作负载成本。
 
-5. **A 股/港股上市潮** ：2024 年地平线、黑芝麻相继港股上市，寒武纪、海光信息已在科创板上市，国产 AI 芯片资本化进程加速。
+5. **中国车载 AI 芯片领先** ：在边缘/车载 AI 领域，地平线征程6等中国芯片已达到国际竞争水平，并在国内市场占据主导。
 
-6. **软件生态是最大壁垒** ：硬件性能差距可通过制程迭代缩短，但 CUDA 生态 15 年的开发者积累是最难逾越的护城河。
+6. **A 股/港股上市潮** ：2024 年地平线、黑芝麻相继港股上市，寒武纪、海光信息已在科创板上市，国产 AI 芯片资本化进程加速。
+
+7. **新架构创新** ：Groq LPU (无 HBM 架构，500+ tokens/s) 和 Cerebras CS-3 (晶圆级芯片，125 PFLOPS) 代表了超越传统 GPU 架构的新型 AI 计算路径。
+
+8. **软件生态是最大壁垒** ：硬件性能差距可通过制程迭代缩短，但 CUDA 生态 15 年的开发者积累是最难逾越的护城河。
 
 ---
 
 *数据来源：公开报道、公司公告、行业分析报告。价格为市场估算，仅供参考。*  
-*Last Updated: 2024 | Data Source: Public filings, industry reports*
+*Last Updated: 2025-Q1 | Data Source: Public filings, industry reports, company announcements*

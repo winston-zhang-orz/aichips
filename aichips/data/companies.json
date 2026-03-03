@@ -400,6 +400,175 @@
         "Not competitive in data center AI"
       ],
       "notes": "Dominant in edge AI SoCs for embedded and IoT applications at low cost"
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "country": "USA",
+      "founded": 1975,
+      "headquarters": "Redmond, WA, USA",
+      "listed": "NASDAQ: MSFT",
+      "market_cap_usd_b": 3100,
+      "revenue_ai_usd_b": 10.0,
+      "fiscal_year": "FY2024",
+      "employees_approx": 228000,
+      "focus": ["Cloud AI Infrastructure", "AI Copilot", "Enterprise AI"],
+      "key_products": ["Maia 100", "Cobalt 100 (ARM CPU)", "Azure AI Accelerators"],
+      "software_stack": "Azure AI / ONNX Runtime / PyTorch",
+      "key_customers": ["OpenAI (exclusive cloud partner)", "Enterprise customers globally"],
+      "competitive_advantages": [
+        "Strategic OpenAI partnership (largest Azure workload)",
+        "Maia 100 designed specifically for GPT-class workloads",
+        "Vertical integration: chip + cloud + software + AI model",
+        "Massive enterprise distribution via Office/Azure"
+      ],
+      "challenges": [
+        "Late mover in custom silicon vs Google TPU, AWS Trainium",
+        "Maia performance details not publicly disclosed",
+        "Heavy NVIDIA dependency for Azure GPU fleet"
+      ],
+      "notes": "Launched Maia 100 and Cobalt 100 in Nov 2023; reducing NVIDIA dependence for Azure AI workloads; $13B+ invested in OpenAI"
+    },
+    {
+      "id": "meta",
+      "name": "Meta Platforms",
+      "country": "USA",
+      "founded": 2004,
+      "headquarters": "Menlo Park, CA, USA",
+      "listed": "NASDAQ: META",
+      "market_cap_usd_b": 1300,
+      "revenue_ai_usd_b": null,
+      "fiscal_year": "FY2024",
+      "employees_approx": 70000,
+      "focus": ["AI Inference (Recommendation)", "LLM Training", "Internal AI Acceleration"],
+      "key_products": ["MTIA v2", "MTIA v1"],
+      "software_stack": "PyTorch / Triton / Internal frameworks",
+      "key_customers": ["Internal (Facebook, Instagram, WhatsApp, Llama)"],
+      "competitive_advantages": [
+        "Massive scale: billions of users → massive inference demand",
+        "MTIA optimized for Meta's unique recommendation workload",
+        "Open-source Llama models drive developer adoption",
+        "Strong AI research talent (FAIR lab)"
+      ],
+      "challenges": [
+        "MTIA not commercially available",
+        "Still heavily reliant on NVIDIA GPUs for Llama training",
+        "Custom silicon covers only inference, not training"
+      ],
+      "notes": "MTIA (Meta Training and Inference Accelerator) targets Meta's recommendation AI; training still on H100/H200 clusters; Llama 3 trained on 24,576 H100 GPUs"
+    },
+    {
+      "id": "baidu",
+      "name": "百度 (Baidu)",
+      "country": "China",
+      "founded": 2000,
+      "headquarters": "Beijing, China",
+      "listed": "NASDAQ: BIDU",
+      "market_cap_usd_b": 30,
+      "revenue_ai_usd_b": 2.5,
+      "fiscal_year": "FY2023",
+      "employees_approx": 40000,
+      "focus": ["Cloud AI Chip", "LLM Training", "Autonomous Driving"],
+      "key_products": ["Kunlun 2 (昆仑2)", "Kunlun 1", "Ernie (AI platform)"],
+      "software_stack": "PaddlePaddle / XPU Runtime",
+      "key_customers": ["Baidu Cloud", "Internal (ERNIE Bot)", "Chinese enterprise customers"],
+      "competitive_advantages": [
+        "One of first Chinese internet companies with custom AI chip",
+        "Deep integration with PaddlePaddle ML framework",
+        "Kunlun 2 powers ERNIE LLM inference"
+      ],
+      "challenges": [
+        "Kunlun limited to 7nm Samsung process (TSMC restricted post-2022)",
+        "Competing against Huawei Ascend in domestic market",
+        "Smaller scale than Huawei in chip production"
+      ],
+      "notes": "Baidu was one of China's earliest AI chip investors; Kunlun 2 powers Baidu's ERNIE Bot and Baidu Cloud AI services"
+    },
+    {
+      "id": "alibaba",
+      "name": "阿里巴巴 (Alibaba Group)",
+      "country": "China",
+      "founded": 1999,
+      "headquarters": "Hangzhou, China",
+      "listed": "NYSE: BABA / HKEX: 9988",
+      "market_cap_usd_b": 200,
+      "revenue_ai_usd_b": 3.0,
+      "fiscal_year": "FY2024",
+      "employees_approx": 220000,
+      "focus": ["Cloud AI Inference", "E-commerce AI", "Cloud Computing", "ARM CPU"],
+      "key_products": ["Hanguang 800 (含光800)", "Yitian 710 (倚天710)", "Tongyi Qianwen (Qwen LLM)"],
+      "software_stack": "PAI (Platform for AI) / MNN / Alibaba Cloud AI",
+      "key_customers": ["Internal (Alibaba Cloud, Taobao)", "Chinese enterprise customers"],
+      "competitive_advantages": [
+        "Hanguang 800: record inference performance for recommendation AI",
+        "Yitian 710: ARM server CPU for cost-efficient cloud compute",
+        "Massive internal AI workload as development testbed",
+        "Alibaba Cloud: #3 cloud globally provides distribution"
+      ],
+      "challenges": [
+        "Custom chips not externally sold (internal only)",
+        "Constrained by US export controls on advanced TSMC nodes",
+        "Competitive pressure from Huawei Ascend in cloud AI"
+      ],
+      "notes": "Alibaba has two custom silicon lines: Hanguang (AI inference) and Yitian (ARM CPU); Tongyi Qianwen (Qwen) LLMs trained on NVIDIA + domestic chips"
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "country": "USA",
+      "founded": 2016,
+      "headquarters": "Mountain View, CA, USA",
+      "listed": "Private (Series D)",
+      "market_cap_usd_b": 2.8,
+      "revenue_ai_usd_b": 0.1,
+      "fiscal_year": "FY2024",
+      "employees_approx": 300,
+      "focus": ["LLM Inference", "Real-time AI API"],
+      "key_products": ["GroqChip (LPU)", "GroqCard", "GroqRack"],
+      "software_stack": "GroqFlow / GroqAPI (OpenAI-compatible)",
+      "key_customers": ["API users via GroqCloud", "Enterprise customers"],
+      "competitive_advantages": [
+        "Fastest publicly available LLM inference (500+ tokens/sec for Llama 70B)",
+        "Deterministic, compiler-driven execution (no runtime variability)",
+        "On-chip SRAM eliminates HBM bandwidth bottleneck",
+        "OpenAI-compatible API for easy migration"
+      ],
+      "challenges": [
+        "14nm process (older than competitors' 5nm/4nm)",
+        "SRAM capacity limits context window and model size per chip",
+        "Must cluster many chips for large models",
+        "Revenue/scale vs. established hyperscalers"
+      ],
+      "notes": "Founded by ex-Google TPU team; LPU (Language Processing Unit) architecture optimized purely for transformer inference; viral for demonstrating real-time LLM streaming"
+    },
+    {
+      "id": "cerebras",
+      "name": "Cerebras Systems",
+      "country": "USA",
+      "founded": 2016,
+      "headquarters": "Sunnyvale, CA, USA",
+      "listed": "Private (filed for IPO 2024)",
+      "market_cap_usd_b": 4.0,
+      "revenue_ai_usd_b": 0.25,
+      "fiscal_year": "FY2024",
+      "employees_approx": 500,
+      "focus": ["LLM Training", "Scientific AI", "High-Performance AI"],
+      "key_products": ["CS-3 (WSE-3)", "CS-2 (WSE-2)", "Cerebras Cloud"],
+      "software_stack": "Cerebras Software Platform / PyTorch / JAX",
+      "key_customers": ["G42 (Abu Dhabi)", "Jasper AI", "Government labs"],
+      "competitive_advantages": [
+        "Wafer-Scale Engine: entire 300mm wafer as single chip",
+        "4 trillion transistors (largest chip ever made)",
+        "Eliminates inter-chip communication bottleneck for single-node",
+        "Fastest single-node training for models up to ~20B parameters"
+      ],
+      "challenges": [
+        "Extremely high system cost ($2M+ per unit)",
+        "Wafer-scale manufacturing yield challenges",
+        "Not suitable for models requiring distributed training across many nodes",
+        "IPO plans delayed"
+      ],
+      "notes": "Unique wafer-scale approach; CS-3 has 44GB on-chip SRAM and 125 PFLOPS BF16; strategic partnership with G42 for Middle East AI infrastructure"
     }
   ]
 }
