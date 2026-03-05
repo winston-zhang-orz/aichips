@@ -16,7 +16,7 @@
     {
       "segment": "Data Center Training",
       "description": "Large-scale AI model training (LLM, multimodal)",
-      "key_players": ["NVIDIA", "AMD", "Google", "Huawei", "Cambricon"],
+      "key_players": ["NVIDIA", "AMD", "Google", "Huawei", "Cambricon", "Cerebras", "Groq"],
       "market_size_2023_usd_b": 35,
       "growth_driver": "LLM race: GPT-4, Gemini, Llama, Qwen, etc.",
       "avg_chip_price_range_usd": "6000-40000"
@@ -24,7 +24,7 @@
     {
       "segment": "Data Center Inference",
       "description": "Serving AI models at scale (chatbots, recommendation, search)",
-      "key_players": ["NVIDIA", "AMD", "AWS Inferentia", "Intel Gaudi", "Huawei"],
+      "key_players": ["NVIDIA", "AMD", "AWS Inferentia", "Intel Gaudi", "Huawei", "Microsoft Maia", "Meta MTIA", "Groq"],
       "market_size_2023_usd_b": 20,
       "growth_driver": "ChatGPT-like service deployment, AI copilots",
       "avg_chip_price_range_usd": "3000-15000"
@@ -32,7 +32,7 @@
     {
       "segment": "Automotive / Autonomous Driving",
       "description": "On-vehicle AI chips for ADAS and full self-driving",
-      "key_players": ["NVIDIA Drive", "Horizon Robotics", "Black Sesame", "Mobileye"],
+      "key_players": ["NVIDIA Drive", "Horizon Robotics", "Black Sesame", "Mobileye", "Qualcomm Snapdragon Ride"],
       "market_size_2023_usd_b": 5,
       "growth_driver": "NEV (New Energy Vehicle) boom in China; L2+ mandates",
       "avg_chip_price_range_usd": "50-500"
@@ -40,7 +40,7 @@
     {
       "segment": "Edge AI / IoT",
       "description": "AI inference at the edge: cameras, robots, industrial",
-      "key_players": ["Rockchip", "Allwinner", "NVIDIA Jetson", "NXP"],
+      "key_players": ["Rockchip", "Allwinner", "NVIDIA Jetson", "NXP", "Qualcomm"],
       "market_size_2023_usd_b": 8,
       "growth_driver": "Smart factory, smart city, vision AI deployments",
       "avg_chip_price_range_usd": "5-200"
@@ -56,7 +56,7 @@
     "us_export_controls_impact": {
       "2022_oct": "A100, H100 banned from China; NVIDIA releases A800/H800 as workaround",
       "2023_oct": "A800 and H800 also banned; Chinese firms pivot entirely to domestic chips",
-      "beneficiaries": ["Huawei Ascend 910B/910C", "Cambricon MLU590", "Enflame T30", "MetaX C500"]
+      "beneficiaries": ["Huawei Ascend 910B/910C", "Cambricon MLU590", "Enflame T30", "MetaX C500", "Baidu Kunlun 2"]
     },
     "chinese_chip_gap_analysis": {
       "training_performance_vs_h100_percent": "30-50% for best domestic options (Ascend 910B)",
@@ -71,7 +71,9 @@
       {"company": "MetaX", "amount_usd_m": 120, "stage": "Series B", "year": 2023},
       {"company": "Moore Threads", "amount_usd_m": 300, "stage": "Series B+", "year": 2022},
       {"company": "Black Sesame Technologies", "amount_usd_m": 100, "stage": "IPO", "year": 2024},
-      {"company": "Horizon Robotics", "amount_usd_m": 696, "stage": "IPO", "year": 2024}
+      {"company": "Horizon Robotics", "amount_usd_m": 696, "stage": "IPO", "year": 2024},
+      {"company": "Groq", "amount_usd_m": 640, "stage": "Series D", "year": 2024},
+      {"company": "Cerebras Systems", "amount_usd_m": 250, "stage": "Pre-IPO", "year": 2024}
     ]
   }
 }
